@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  SwiftUI-Greetings
+
+  Created by Sadık Çoban on 19.02.2023.
+  
+*/
+
+"greetings" = "Selamlar";

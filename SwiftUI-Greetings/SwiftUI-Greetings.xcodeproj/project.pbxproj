@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		944F5A9A29A240FE006CE429 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944F5A9929A240FE006CE429 /* Launch Screen.storyboard */; };
+		944F5A9D29A2432A006CE429 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 944F5A9F29A2432A006CE429 /* Localizable.strings */; };
+		944F5AA129A24435006CE429 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 944F5AA329A24435006CE429 /* Launch Screen.storyboard */; };
+		944F5AAA29A24693006CE429 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F5AA929A24693006CE429 /* BackgroundView.swift */; };
+		944F5AAC29A246B8006CE429 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F5AAB29A246B8006CE429 /* TextView.swift */; };
+		944F5AAE29A246D6006CE429 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F5AAD29A246D6006CE429 /* TitleView.swift */; };
+		944F5AB029A246EB006CE429 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F5AAF29A246EB006CE429 /* MessagesView.swift */; };
 		94563764298AC58700291099 /* SwiftUI_GreetingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94563763298AC58700291099 /* SwiftUI_GreetingsApp.swift */; };
 		94563766298AC58700291099 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94563765298AC58700291099 /* ContentView.swift */; };
 		94563768298AC58800291099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94563767298AC58800291099 /* Assets.xcassets */; };
@@ -15,7 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		944F5A9929A240FE006CE429 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		944F5A9E29A2432A006CE429 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		944F5AA029A2432E006CE429 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		944F5AA629A2443E006CE429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		944F5AA929A24693006CE429 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		944F5AAB29A246B8006CE429 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		944F5AAD29A246D6006CE429 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		944F5AAF29A246EB006CE429 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		94563760298AC58700291099 /* SwiftUI-Greetings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Greetings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94563763298AC58700291099 /* SwiftUI_GreetingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_GreetingsApp.swift; sourceTree = "<group>"; };
 		94563765298AC58700291099 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,9 +65,14 @@
 			isa = PBXGroup;
 			children = (
 				94563763298AC58700291099 /* SwiftUI_GreetingsApp.swift */,
+				944F5A9F29A2432A006CE429 /* Localizable.strings */,
 				94563765298AC58700291099 /* ContentView.swift */,
+				944F5AAF29A246EB006CE429 /* MessagesView.swift */,
+				944F5AAD29A246D6006CE429 /* TitleView.swift */,
+				944F5AAB29A246B8006CE429 /* TextView.swift */,
+				944F5AA929A24693006CE429 /* BackgroundView.swift */,
 				94563767298AC58800291099 /* Assets.xcassets */,
-				944F5A9929A240FE006CE429 /* Launch Screen.storyboard */,
+				944F5AA329A24435006CE429 /* Launch Screen.storyboard */,
 				94563769298AC58800291099 /* Preview Content */,
 			);
 			path = "SwiftUI-Greetings";
@@ -112,6 +128,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 94563757298AC58700291099;
 			productRefGroup = 94563761298AC58700291099 /* Products */;
@@ -128,7 +145,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				944F5A9A29A240FE006CE429 /* Launch Screen.storyboard in Resources */,
+				944F5AA129A24435006CE429 /* Launch Screen.storyboard in Resources */,
+				944F5A9D29A2432A006CE429 /* Localizable.strings in Resources */,
 				9456376B298AC58800291099 /* Preview Assets.xcassets in Resources */,
 				94563768298AC58800291099 /* Assets.xcassets in Resources */,
 			);
@@ -141,12 +159,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944F5AAA29A24693006CE429 /* BackgroundView.swift in Sources */,
+				944F5AAC29A246B8006CE429 /* TextView.swift in Sources */,
+				944F5AB029A246EB006CE429 /* MessagesView.swift in Sources */,
 				94563766298AC58700291099 /* ContentView.swift in Sources */,
 				94563764298AC58700291099 /* SwiftUI_GreetingsApp.swift in Sources */,
+				944F5AAE29A246D6006CE429 /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		944F5A9F29A2432A006CE429 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				944F5A9E29A2432A006CE429 /* en */,
+				944F5AA029A2432E006CE429 /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		944F5AA329A24435006CE429 /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				944F5AA629A2443E006CE429 /* Base */,
+			);
+			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9456376C298AC58800291099 /* Debug */ = {

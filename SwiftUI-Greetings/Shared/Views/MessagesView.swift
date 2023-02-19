@@ -17,12 +17,15 @@ struct MessagesView: View {
     ]
     
     var body: some View {
-        VStack(alignment: .leading) {
-            ForEach(messages) {
-                TextView(color: $0.color,text: $0.text)
+        HStack {
+            VStack(alignment: .leading) {
+                ForEach(messages) {
+                    TextView(color: $0.color,text: $0.text)
+                }
             }
+            .padding()
+            Spacer()
         }
-        .padding()
     }
 }
 

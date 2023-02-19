@@ -59,6 +59,7 @@
 				944F5AAF29A246EB006CE429 /* MessagesView.swift */,
 				944F5AAD29A246D6006CE429 /* TitleView.swift */,
 				944F5AAB29A246B8006CE429 /* TextView.swift */,
+				944F5AB729A28B9A006CE429 /* MainView.swift */,
 				944F5AA929A24693006CE429 /* BackgroundView.swift */,
 			);
 			path = Views;
@@ -93,7 +94,6 @@
 			children = (
 				944F5AB329A24CB3006CE429 /* Views */,
 				94563763298AC58700291099 /* GreetingsApp.swift */,
-				944F5AB729A28B9A006CE429 /* MainView.swift */,
 				944F5AB429A24CC0006CE429 /* Models */,
 				944F5A9F29A2432A006CE429 /* Localizable.strings */,
 				94563767298AC58800291099 /* Assets.xcassets */,

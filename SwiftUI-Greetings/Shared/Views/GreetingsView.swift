@@ -7,13 +7,9 @@
 
 import SwiftUI
 
-struct DataItemModel: Identifiable {
-    let id = UUID()
-    let text: String
-    let color: Color
-}
 
-struct ContentView: View {
+
+struct GreetingsView: View {
     
     var body: some View {
         ZStack {
@@ -34,10 +30,10 @@ struct ContentView: View {
 
 
 
-struct ContentView_Previews: PreviewProvider {
+struct GreetingsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-        ContentView()
+        GreetingsView()
+        GreetingsView()
             .preferredColorScheme(.dark)
     }
 }

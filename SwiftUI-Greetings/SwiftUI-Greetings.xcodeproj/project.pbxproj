@@ -13,8 +13,9 @@
 		944F5AAC29A246B8006CE429 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F5AAB29A246B8006CE429 /* TextView.swift */; };
 		944F5AAE29A246D6006CE429 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F5AAD29A246D6006CE429 /* TitleView.swift */; };
 		944F5AB029A246EB006CE429 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F5AAF29A246EB006CE429 /* MessagesView.swift */; };
-		94563764298AC58700291099 /* SwiftUI_GreetingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94563763298AC58700291099 /* SwiftUI_GreetingsApp.swift */; };
-		94563766298AC58700291099 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94563765298AC58700291099 /* ContentView.swift */; };
+		944F5AB229A24C15006CE429 /* DataItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944F5AB129A24C15006CE429 /* DataItemModel.swift */; };
+		94563764298AC58700291099 /* GreetingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94563763298AC58700291099 /* GreetingsApp.swift */; };
+		94563766298AC58700291099 /* GreetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94563765298AC58700291099 /* GreetingsView.swift */; };
 		94563768298AC58800291099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94563767298AC58800291099 /* Assets.xcassets */; };
 		9456376B298AC58800291099 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9456376A298AC58800291099 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -27,9 +28,10 @@
 		944F5AAB29A246B8006CE429 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		944F5AAD29A246D6006CE429 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		944F5AAF29A246EB006CE429 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		944F5AB129A24C15006CE429 /* DataItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItemModel.swift; sourceTree = "<group>"; };
 		94563760298AC58700291099 /* SwiftUI-Greetings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Greetings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		94563763298AC58700291099 /* SwiftUI_GreetingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_GreetingsApp.swift; sourceTree = "<group>"; };
-		94563765298AC58700291099 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		94563763298AC58700291099 /* GreetingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsApp.swift; sourceTree = "<group>"; };
+		94563765298AC58700291099 /* GreetingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsView.swift; sourceTree = "<group>"; };
 		94563767298AC58800291099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9456376A298AC58800291099 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,10 +47,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		944F5AB329A24CB3006CE429 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94563765298AC58700291099 /* GreetingsView.swift */,
+				944F5AAF29A246EB006CE429 /* MessagesView.swift */,
+				944F5AAD29A246D6006CE429 /* TitleView.swift */,
+				944F5AAB29A246B8006CE429 /* TextView.swift */,
+				944F5AA929A24693006CE429 /* BackgroundView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		944F5AB429A24CC0006CE429 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				944F5AB129A24C15006CE429 /* DataItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		94563757298AC58700291099 = {
 			isa = PBXGroup;
 			children = (
-				94563762298AC58700291099 /* SwiftUI-Greetings */,
+				94563762298AC58700291099 /* Shared */,
 				94563761298AC58700291099 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,21 +83,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		94563762298AC58700291099 /* SwiftUI-Greetings */ = {
+		94563762298AC58700291099 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				94563763298AC58700291099 /* SwiftUI_GreetingsApp.swift */,
+				944F5AB329A24CB3006CE429 /* Views */,
+				94563763298AC58700291099 /* GreetingsApp.swift */,
+				944F5AB429A24CC0006CE429 /* Models */,
 				944F5A9F29A2432A006CE429 /* Localizable.strings */,
-				94563765298AC58700291099 /* ContentView.swift */,
-				944F5AAF29A246EB006CE429 /* MessagesView.swift */,
-				944F5AAD29A246D6006CE429 /* TitleView.swift */,
-				944F5AAB29A246B8006CE429 /* TextView.swift */,
-				944F5AA929A24693006CE429 /* BackgroundView.swift */,
 				94563767298AC58800291099 /* Assets.xcassets */,
 				944F5AA329A24435006CE429 /* Launch Screen.storyboard */,
 				94563769298AC58800291099 /* Preview Content */,
 			);
-			path = "SwiftUI-Greetings";
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		94563769298AC58800291099 /* Preview Content */ = {
@@ -159,11 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944F5AB229A24C15006CE429 /* DataItemModel.swift in Sources */,
 				944F5AAA29A24693006CE429 /* BackgroundView.swift in Sources */,
 				944F5AAC29A246B8006CE429 /* TextView.swift in Sources */,
 				944F5AB029A246EB006CE429 /* MessagesView.swift in Sources */,
-				94563766298AC58700291099 /* ContentView.swift in Sources */,
-				94563764298AC58700291099 /* SwiftUI_GreetingsApp.swift in Sources */,
+				94563766298AC58700291099 /* GreetingsView.swift in Sources */,
+				94563764298AC58700291099 /* GreetingsApp.swift in Sources */,
 				944F5AAE29A246D6006CE429 /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Greetings/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Shared/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -341,7 +361,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Greetings/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Shared/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
